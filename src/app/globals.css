@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* TODO: Change once other devices views or UI are ready  */
+  min-width: 1024px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @apply rounded-xl px-2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-xl;
+}
+
+.scrollbar-gray::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+}
+
+/* Date Picker */
+.react-datepicker__triangle {
+  display: inline;
+  width: 50px;
+}
+
+.react-datepicker{
+  background-color: white
+}
+
+
+.react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range {
+  @apply !bg-primary-light ;
+}
+
+.react-datepicker__day--today {
+  @apply !bg-primary-light !rounded-full;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--range-start {
+  @apply !bg-primary !text-white !rounded-full;
+}
+
+
+/* embla carousel */
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 170px;
+  margin-right: 20px;
+}
+
+
+
+
+

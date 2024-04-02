@@ -1,0 +1,8 @@
+
+.tab[data-selected=true] > div[data-slot=tabContent] {
+  @apply font-extrabold;
+}
+
+.tab > div[data-slot=tabContent] {
+  @apply text-secondary;
+}

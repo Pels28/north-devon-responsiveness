@@ -1,0 +1,4 @@
+.phoneLabel {
+  top: 50%;
+  transform: translate(62px, -50%) !important;
+}

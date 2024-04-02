@@ -1,0 +1,8 @@
+.splitButton {
+  @apply relative;
+}
+
+.splitButton::after {
+  content: "";
+  @apply border-r border-solid border-secondary h-full right-0 bottom-0 absolute;
+}
